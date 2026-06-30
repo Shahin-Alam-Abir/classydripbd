@@ -8,6 +8,12 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'menslifestylebd.com',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'placehold.co',
+                pathname: '/**',
             },
         ],
     },

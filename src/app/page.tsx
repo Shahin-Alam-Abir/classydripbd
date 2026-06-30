@@ -32,7 +32,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-black text-white py-32 md:py-44 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-black to-black opacity-60" />
-        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'url(https://placehold.co/1920x1080/000000/FFFFFF/png?text=Abstract)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://menslifestylebd.com/wp-content/uploads/2026/01/COVER-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
           <span className="text-sm tracking-[0.3em] text-gray-400 mb-6 uppercase">Premium Men's Clothing</span>
           <h1 className="text-5xl md:text-7xl font-bold font-serif mb-6 tracking-wider animate-fade-in-up">
@@ -192,7 +192,7 @@ export default function Home() {
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-r from-red-600 to-red-800 text-white p-12 md:p-20 text-center relative overflow-hidden">
-              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url(https://placehold.co/1920x1080/000000/FFFFFF/png?text=Pattern)', backgroundSize: 'cover' }} />
+              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://menslifestylebd.com/wp-content/uploads/elementor/thumbs/176210849233575978427_web_cover_for_turtle_neck_sweater-4-rfx37katusxtn5ojrak56d135s2nuq0oywf013e3s2.webp)', backgroundSize: 'cover' }} />
               <div className="relative z-10">
                 <span className="text-sm tracking-[0.3em] uppercase mb-4 block">Limited Time</span>
                 <h2 className="text-4xl md:text-6xl font-bold font-serif mb-4">Sale of the Year</h2>
@@ -215,10 +215,17 @@ export default function Home() {
             <h3 className="text-lg font-bold tracking-widest uppercase">Follow Us @classydripbd</h3>
           </div>
           <div className="flex animate-marquee gap-4 w-max">
-            {[...Array(6)].map((_, i) => (
+            {[
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/175915194068035332106_mf_719_2-1-1-1.webp',
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/1716909849821-manfarebd-id-13-1-1.webp',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Black-Maniq.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Mst-Ash-Maniq.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Navy-Q.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/175915197042389039174_mf_719_3-1-1.webp',
+            ].map((src, i) => (
               <div key={i} className="w-48 h-48 bg-gray-200 flex-shrink-0 overflow-hidden group relative">
                 <img
-                  src={`https://placehold.co/400x400/E5E7EB/000000/png?text=Gallery+${i + 1}`}
+                  src={src}
                   alt={`Gallery ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
@@ -227,10 +234,17 @@ export default function Home() {
                 </div>
               </div>
             ))}
-            {[...Array(6)].map((_, i) => (
+            {[
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/175915194068035332106_mf_719_2-1-1-1.webp',
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/1716909849821-manfarebd-id-13-1-1.webp',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Black-Maniq.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Mst-Ash-Maniq.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2026/05/Navy-Q.jpg',
+              'https://menslifestylebd.com/wp-content/uploads/2025/12/175915197042389039174_mf_719_3-1-1.webp',
+            ].map((src, i) => (
               <div key={`dup-${i}`} className="w-48 h-48 bg-gray-200 flex-shrink-0 overflow-hidden group relative">
                 <img
-                  src={`https://placehold.co/400x400/E5E7EB/000000/png?text=Gallery+${i + 1}`}
+                  src={src}
                   alt={`Gallery ${i + 1}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />

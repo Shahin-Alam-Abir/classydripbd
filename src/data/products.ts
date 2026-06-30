@@ -16,6 +16,8 @@ export interface Product {
   isSale?: boolean;
 }
 
+const base = 'https://menslifestylebd.com/wp-content/uploads';
+
 export const products: Product[] = [
   {
     id: '1',
@@ -23,10 +25,9 @@ export const products: Product[] = [
     price: 1200,
     salePrice: 899,
     images: [
-      'https://placehold.co/600x800/800000/FFFFFF/png?text=Maroon+Shirt+Front',
-      'https://placehold.co/600x800/800000/FFFFFF/png?text=Maroon+Shirt+Back',
-      'https://placehold.co/600x800/800000/FFFFFF/png?text=Maroon+Shirt+Detail',
-      'https://placehold.co/600x800/800000/FFFFFF/png?text=Maroon+Shirt+Model',
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-7.54.25-AM-4.jpeg`,
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-7.54.25-AM-7.jpeg`,
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-7.54.25-AM.jpeg`,
     ],
     category: 'shirt',
     subcategory: 'spandex-micro-shirt',
@@ -51,9 +52,9 @@ export const products: Product[] = [
     price: 1500,
     salePrice: 1100,
     images: [
-      'https://placehold.co/600x800/1a237e/FFFFFF/png?text=Denim+Shirt+Front',
-      'https://placehold.co/600x800/1a237e/FFFFFF/png?text=Denim+Shirt+Back',
-      'https://placehold.co/600x800/1a237e/FFFFFF/png?text=Denim+Shirt+Detail',
+      `${base}/2022/12/Image-9.1-min-2.jpg`,
+      `${base}/2022/12/Image-9.2-min-2.jpg`,
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-8.07.17-AM-4.jpeg`,
     ],
     category: 'shirt',
     subcategory: 'denim-shirt',
@@ -77,10 +78,9 @@ export const products: Product[] = [
     price: 2500,
     salePrice: 1900,
     images: [
-      'https://placehold.co/600x800/f5deb3/000000/png?text=Mughal+Panjabi+Front',
-      'https://placehold.co/600x800/f5deb3/000000/png?text=Mughal+Panjabi+Back',
-      'https://placehold.co/600x800/f5deb3/000000/png?text=Mughal+Panjabi+Detail',
-      'https://placehold.co/600x800/f5deb3/000000/png?text=Mughal+Panjabi+Model',
+      `${base}/2026/05/Navy-Q.jpg`,
+      `${base}/2026/05/Navy-Fold.jpg`,
+      `${base}/2026/05/Sea-Green-Maniq.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'mughal-embroidary-panjabi',
@@ -104,9 +104,9 @@ export const products: Product[] = [
     price: 2200,
     salePrice: 1190,
     images: [
-      'https://placehold.co/600x800/556b2f/FFFFFF/png?text=Ambush+Panjabi+Front',
-      'https://placehold.co/600x800/556b2f/FFFFFF/png?text=Ambush+Panjabi+Back',
-      'https://placehold.co/600x800/556b2f/FFFFFF/png?text=Ambush+Panjabi+Detail',
+      `${base}/2026/05/Mst-Ash-Maniq.jpg`,
+      `${base}/2026/05/Mst-Ash-Fold.jpg`,
+      `${base}/2026/05/Sea-Green-Maniq.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'ambush-cotton-panjabi',
@@ -133,8 +133,8 @@ export const products: Product[] = [
     price: 1200,
     salePrice: 899,
     images: [
-      'https://placehold.co/600x800/2e8b57/FFFFFF/png?text=Sea+Green+Shirt+Front',
-      'https://placehold.co/600x800/2e8b57/FFFFFF/png?text=Sea+Green+Shirt+Back',
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-8.07.17-AM-5.jpeg`,
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-8.07.17-AM-4.jpeg`,
     ],
     category: 'shirt',
     subcategory: 'spandex-micro-shirt',
@@ -157,8 +157,8 @@ export const products: Product[] = [
     name: 'Premium Solid Shirt for Men | MS-48',
     price: 1100,
     images: [
-      'https://placehold.co/600x800/ffffff/000000/png?text=Solid+Shirt+Front',
-      'https://placehold.co/600x800/ffffff/000000/png?text=Solid+Shirt+Back',
+      `${base}/2022/12/Image-10.1-min-2.jpg`,
+      `${base}/2022/12/Image-10.2-min-2.jpg`,
     ],
     category: 'shirt',
     subcategory: 'solid-shirt',
@@ -182,9 +182,10 @@ export const products: Product[] = [
     price: 1250,
     salePrice: 650,
     images: [
-      'https://placehold.co/600x800/4a4a4a/FFFFFF/png?text=Acid+Wash+Front',
-      'https://placehold.co/600x800/4a4a4a/FFFFFF/png?text=Acid+Wash+Back',
-      'https://placehold.co/600x800/4a4a4a/FFFFFF/png?text=Acid+Wash+Detail',
+      `${base}/2025/12/175915194068035332106_mf_719_2-1-1-1.webp`,
+      `${base}/2025/12/175915194068035332106_mf_719_2-2-1.webp`,
+      `${base}/2025/12/175915196197674967749_mf_719_4-1-1.webp`,
+      `${base}/2025/12/175915197042389039174_mf_719_3-1-1.webp`,
     ],
     category: 't-shirt',
     subcategory: 'drop-shoulder-t-shirt',
@@ -208,9 +209,8 @@ export const products: Product[] = [
     price: 1250,
     salePrice: 650,
     images: [
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=Designer+TS+Front',
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=Designer+TS+Back',
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=Designer+TS+Detail',
+      `${base}/2025/12/1716909849821-manfarebd-id-13-1-1.webp`,
+      `${base}/2025/12/1716909849821-manfarebd-id-13-2.webp`,
     ],
     category: 't-shirt',
     subcategory: 'designer-edition-t-shirt',
@@ -234,8 +234,8 @@ export const products: Product[] = [
     price: 1250,
     salePrice: 650,
     images: [
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=Designer+165+Front',
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=Designer+165+Back',
+      `${base}/2025/12/1716910014412-manfarebd-id-13-1-1.webp`,
+      `${base}/2025/12/1716910014412-manfarebd-id-13-2.webp`,
     ],
     category: 't-shirt',
     subcategory: 'designer-edition-t-shirt',
@@ -259,9 +259,8 @@ export const products: Product[] = [
     price: 2000,
     salePrice: 1190,
     images: [
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=AMB+Black+Front',
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=AMB+Black+Back',
-      'https://placehold.co/600x800/000000/FFFFFF/png?text=AMB+Black+Detail',
+      `${base}/2026/05/Black-Maniq.jpg`,
+      `${base}/2026/05/Black-Fold.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'ambush-cotton-panjabi',
@@ -285,8 +284,8 @@ export const products: Product[] = [
     price: 2000,
     salePrice: 1190,
     images: [
-      'https://placehold.co/600x800/006994/FFFFFF/png?text=Sher+Shakkar+Front',
-      'https://placehold.co/600x800/006994/FFFFFF/png?text=Sher+Shakkar+Back',
+      `${base}/2026/05/Sea-Green-Maniq.jpg`,
+      `${base}/2026/05/Sea-Green-Fold.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'sher-shakkar-panjabi',
@@ -309,8 +308,8 @@ export const products: Product[] = [
     price: 2000,
     salePrice: 1190,
     images: [
-      'https://placehold.co/600x800/006400/FFFFFF/png?text=Sher+Shakkar+Green',
-      'https://placehold.co/600x800/006400/FFFFFF/png?text=Sher+Shakkar+Green+Back',
+      `${base}/2026/05/Sea-Green-Fold.jpg`,
+      `${base}/2026/05/Sea-Green-Maniq.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'sher-shakkar-panjabi',
@@ -332,8 +331,8 @@ export const products: Product[] = [
     name: 'Ember Weave Panjabi | EM Rust',
     price: 2300,
     images: [
-      'https://placehold.co/600x800/b7410e/FFFFFF/png?text=Ember+Weave+Front',
-      'https://placehold.co/600x800/b7410e/FFFFFF/png?text=Ember+Weave+Back',
+      `${base}/2026/05/Navy-Q.jpg`,
+      `${base}/2026/05/Navy-Fold.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'ember-wev-panjabi',
@@ -356,8 +355,8 @@ export const products: Product[] = [
     price: 1100,
     salePrice: 850,
     images: [
-      'https://placehold.co/600x800/000080/FFFFFF/png?text=Polo+Classic+Front',
-      'https://placehold.co/600x800/000080/FFFFFF/png?text=Polo+Classic+Back',
+      `${base}/2025/12/176081360734696998217_ms_94_1-1-1.webp`,
+      `${base}/2025/12/176081360734696998217_ms_94_1-2.webp`,
     ],
     category: 't-shirt',
     subcategory: 'polo-t-shirt',
@@ -380,8 +379,8 @@ export const products: Product[] = [
     name: 'Premium Leather Belt | Classic Brown',
     price: 800,
     images: [
-      'https://placehold.co/600x800/8B4513/FFFFFF/png?text=Leather+Belt+Front',
-      'https://placehold.co/600x800/8B4513/FFFFFF/png?text=Leather+Belt+Detail',
+      `${base}/2025/12/Group-238-1.png`,
+      `${base}/2025/12/Group-238-1.png`,
     ],
     category: 'accessories',
     subcategory: 'belt',
@@ -404,8 +403,8 @@ export const products: Product[] = [
     name: 'Premium Leather Wallet | Brown',
     price: 650,
     images: [
-      'https://placehold.co/600x800/8B4513/FFFFFF/png?text=Leather+Wallet+Front',
-      'https://placehold.co/600x800/8B4513/FFFFFF/png?text=Leather+Wallet+Inside',
+      `${base}/2025/12/Group-238-1.png`,
+      `${base}/2025/12/Group-238-1.png`,
     ],
     category: 'accessories',
     subcategory: 'wallet',
@@ -428,8 +427,8 @@ export const products: Product[] = [
     name: 'Turkish Thread Panjabi | TT Navy',
     price: 2800,
     images: [
-      'https://placehold.co/600x800/000080/FFFFFF/png?text=Turkish+Thread+Front',
-      'https://placehold.co/600x800/000080/FFFFFF/png?text=Turkish+Thread+Back',
+      `${base}/2026/05/Navy-Q.jpg`,
+      `${base}/2026/05/Navy-Fold.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'turkish-thread-panjabi',
@@ -452,8 +451,8 @@ export const products: Product[] = [
     price: 1300,
     salePrice: 990,
     images: [
-      'https://placehold.co/600x800/ff6347/FFFFFF/png?text=Casual+Print+Front',
-      'https://placehold.co/600x800/ff6347/FFFFFF/png?text=Casual+Print+Back',
+      `${base}/2026/03/WhatsApp-Image-2026-03-05-at-7.21.15-PM-34.jpeg`,
+      `${base}/2026/03/WhatsApp-Image-2026-03-04-at-7.54.25-AM.jpeg`,
     ],
     category: 'shirt',
     subcategory: 'casual-print-shirt',
@@ -476,8 +475,8 @@ export const products: Product[] = [
     name: 'Indian Cherry Panjabi | IC Red',
     price: 2600,
     images: [
-      'https://placehold.co/600x800/dc143c/FFFFFF/png?text=Indian+Cherry+Front',
-      'https://placehold.co/600x800/dc143c/FFFFFF/png?text=Indian+Cherry+Back',
+      `${base}/2026/05/Black-Maniq.jpg`,
+      `${base}/2026/05/Black-Fold.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'indian-cherry-panjabi',
@@ -499,8 +498,8 @@ export const products: Product[] = [
     name: 'Ottoman Heritage Embroidery Panjabi',
     price: 3200,
     images: [
-      'https://placehold.co/600x800/800020/FFFFFF/png?text=Ottoman+Heritage+Front',
-      'https://placehold.co/600x800/800020/FFFFFF/png?text=Ottoman+Heritage+Back',
+      `${base}/2026/05/Navy-Q.jpg`,
+      `${base}/2026/05/Mst-Ash-Maniq.jpg`,
     ],
     category: 'panjabi',
     subcategory: 'ottoman-heritage-embroydery-panjabi',
@@ -520,10 +519,10 @@ export const products: Product[] = [
 ];
 
 export const categories = [
-  { id: 'shirt', name: 'Shirt', nameBn: 'শার্ট', count: 5, image: 'https://placehold.co/600x800/E5E7EB/000000/png?text=Shirt' },
-  { id: 't-shirt', name: 'T-Shirt', nameBn: 'টি-শার্ট', count: 4, image: 'https://placehold.co/600x800/E5E7EB/000000/png?text=T-Shirt' },
-  { id: 'panjabi', name: 'Panjabi', nameBn: 'পাঞ্জাবি', count: 8, image: 'https://placehold.co/600x800/E5E7EB/000000/png?text=Panjabi' },
-  { id: 'accessories', name: 'Accessories', nameBn: 'এক্সেসরিজ', count: 2, image: 'https://placehold.co/600x800/E5E7EB/000000/png?text=Accessories' },
+  { id: 'shirt', name: 'Shirt', nameBn: 'শার্ট', count: 5, image: `${base}/2022/12/Image-10.1-min-2.jpg` },
+  { id: 't-shirt', name: 'T-Shirt', nameBn: 'টি-শার্ট', count: 4, image: `${base}/2025/12/175915194068035332106_mf_719_2-1-1-1.webp` },
+  { id: 'panjabi', name: 'Panjabi', nameBn: 'পাঞ্জাবি', count: 8, image: `${base}/2026/05/Navy-Q.jpg` },
+  { id: 'accessories', name: 'Accessories', nameBn: 'এক্সেসরিজ', count: 2, image: `${base}/2025/12/Group-238-1.png` },
 ];
 
 export const subcategories: Record<string, { id: string; name: string }[]> = {
