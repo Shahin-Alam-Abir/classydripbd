@@ -1,10 +1,10 @@
 import { Truck, ShieldCheck, RotateCcw, Headphones } from 'lucide-react';
 
 const badges = [
-  { icon: Truck, title: 'Fastest Shipping', desc: '24-48 Hours Delivery' },
-  { icon: ShieldCheck, title: 'Cash On Delivery', desc: 'Pay When You Receive' },
-  { icon: RotateCcw, title: '14-Day Returns', desc: 'Easy Exchange Policy' },
-  { icon: Headphones, title: '24/7 Support', desc: 'Dedicated Customer Care' },
+  { icon: Truck, title: 'দ্রুত শিপিং', desc: '২৪-৪৮ ঘন্টায় ডেলিভারি' },
+  { icon: ShieldCheck, title: 'ক্যাশ অন ডেলিভারি', desc: 'পাওয়ার সময় পেমেন্ট' },
+  { icon: RotateCcw, title: '১৪ দিন রিটার্ন', desc: 'সহজ এক্সচেঞ্জ পলিসি' },
+  { icon: Headphones, title: '২৪/৭ সাপোর্ট', desc: 'ডেডিকেটেড কাস্টমার কেয়ার' },
 ];
 
 export default function TrustBadges() {
