@@ -54,7 +54,7 @@ export default function Navbar() {
     <>
       {/* Top bar */}
       <div className="bg-black text-white text-xs text-center py-2 px-4 tracking-wider hidden md:block">
-        Free Shipping on Orders Over ৳1,500 | Cash on Delivery Available
+        ৳১,৫০০+ অর্ডারে ফ্রি শিপিং | ক্যাশ অন ডেলিভারি
       </div>
 
       <nav className={`bg-white border-b border-gray-200 sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? 'shadow-md' : ''}`}>
@@ -69,8 +69,12 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center justify-center flex-1 md:flex-none">
-              <Link href="/" className="flex items-center">
-                <img src="/images/logo.jpg" alt="Classy Drip" className="h-12 w-auto" />
+              <Link href="/" className="flex items-center gap-3">
+                <img src="/images/logo.jpg" alt="Classy Drip" className="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover" />
+                <div className="flex flex-col items-start">
+                  <span className="font-serif text-xl md:text-2xl font-bold tracking-[0.15em] text-black leading-tight">CLASSY</span>
+                  <span className="text-[10px] md:text-xs tracking-[0.25em] font-semibold text-black leading-tight">DRIP</span>
+                </div>
               </Link>
             </div>
 
@@ -132,7 +136,13 @@ export default function Navbar() {
           <div className="absolute inset-0 bg-black/50" onClick={() => setMobileOpen(false)} />
           <div className="absolute top-0 left-0 h-full w-80 bg-white shadow-2xl animate-slide-down overflow-y-auto">
             <div className="flex justify-between items-center p-6 border-b border-gray-100">
-              <img src="/images/logo.jpg" alt="Classy Drip" className="h-10 w-auto" />
+              <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+                <img src="/images/logo.jpg" alt="Classy Drip" className="h-9 w-9 rounded-full object-cover" />
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg font-bold tracking-[0.15em] leading-tight">CLASSY</span>
+                  <span className="text-[9px] tracking-[0.25em] font-semibold leading-tight">DRIP</span>
+                </div>
+              </Link>
               <button onClick={() => setMobileOpen(false)} className="text-black">
                 <X className="h-6 w-6" />
               </button>
@@ -177,13 +187,13 @@ export default function Navbar() {
               ))}
               <div className="border-t border-gray-100 mt-4 pt-4 px-6">
                 <Link href="/account" onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-3 text-sm text-gray-600 hover:text-black transition">
-                  <User className="h-5 w-5" /> My Account
+                  <User className="h-5 w-5" /> আমার অ্যাকাউন্ট
                 </Link>
                 <Link href="/contact-us" onClick={() => setMobileOpen(false)} className="block py-3 text-sm text-gray-600 hover:text-black transition">
-                  Contact Us
+                  যোগাযোগ
                 </Link>
                 <Link href="/about-us" onClick={() => setMobileOpen(false)} className="block py-3 text-sm text-gray-600 hover:text-black transition">
-                  About Us
+                  আমাদের সম্পর্কে
                 </Link>
               </div>
             </div>
@@ -196,7 +206,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-[70] bg-white animate-fade-in">
           <div className="max-w-3xl mx-auto px-4 pt-24">
             <div className="flex justify-between items-center mb-12">
-              <h2 className="text-2xl font-bold tracking-wider">What Are You Looking For?</h2>
+              <h2 className="text-2xl font-bold tracking-wider">আপনি কী খুঁজছেন?</h2>
               <button onClick={() => setSearchOpen(false)} className="text-black hover:text-gray-600 transition">
                 <X className="h-8 w-8" />
               </button>
@@ -205,15 +215,15 @@ export default function Navbar() {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search products..."
+                placeholder="প্রোডাক্ট সার্চ করুন..."
                 className="w-full border-b-2 border-black pb-4 pl-14 pr-4 text-2xl focus:outline-none placeholder:text-gray-300"
                 autoFocus
               />
             </div>
             <div className="mt-8">
-              <p className="text-sm text-gray-500 mb-4 tracking-wider uppercase">Trending Searches</p>
+              <p className="text-sm text-gray-500 mb-4 tracking-wider uppercase">ট্রেন্ডিং সার্চ</p>
               <div className="flex flex-wrap gap-3">
-                {['Shirt', 'Panjabi', 'T-Shirt', 'Premium', 'New Collection', 'Eid Collection'].map((term) => (
+                {['শার্ট', 'পাঞ্জাবি', 'টি-শার্ট', 'প্রিমিয়াম', 'নতুন কালেকশন', 'ঈদ কালেকশন'].map((term) => (
                   <span key={term} className="px-4 py-2 bg-gray-100 text-sm text-gray-700 hover:bg-black hover:text-white transition cursor-pointer">
                     {term}
                   </span>

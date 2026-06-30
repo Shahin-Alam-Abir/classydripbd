@@ -604,7 +604,7 @@ export const categories = [
   { id: 't-shirt', name: 'T-Shirt', nameBn: 'টি-শার্ট', count: 4, image: `${base}/2025/12/175915194068035332106_mf_719_2-1-1-1.webp` },
   { id: 'panjabi', name: 'Panjabi', nameBn: 'পাঞ্জাবি', count: 8, image: `${base}/2026/05/Navy-Q.jpg` },
   { id: 'accessories', name: 'Accessories', nameBn: 'এক্সেসরিজ', count: 2, image: `${base}/2025/12/Group-238-1.png` },
-  { id: 'shoes', name: 'Shoes', nameBn: 'জুতা', count: 3, image: `https://placehold.co/600x800/000000/FFFFFF/png?text=Shoes` },
+  { id: 'shoes', name: 'Shoes', nameBn: 'জুতা', count: 3, image: `https://menslifestylebd.com/wp-content/uploads/2022/12/Image-10.1-min-2.jpg` },
 ];
 
 export const subcategories: Record<string, { id: string; name: string }[]> = {

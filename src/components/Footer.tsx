@@ -8,44 +8,50 @@ export default function Footer() {
 
           <div className="col-span-1 md:col-span-1">
             <div className="flex flex-col items-start mb-6">
-              <img src="/images/logo.jpg" alt="Classy Drip" className="h-14 w-auto mb-2" />
+              <Link href="/" className="flex items-center gap-3 mb-2">
+                <img src="/images/logo.jpg" alt="Classy Drip" className="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover" />
+                <div className="flex flex-col">
+                  <span className="font-serif text-2xl md:text-3xl font-bold tracking-[0.15em] leading-tight text-white">CLASSY</span>
+                  <span className="text-xs tracking-[0.25em] font-semibold text-gray-300 leading-tight">DRIP</span>
+                </div>
+              </Link>
             </div>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-              Defined by class, driven by style. The best men's clothing store in Bangladesh providing premium quality and exclusive designs.
+              ক্লাসের সংজ্ঞা দেয়, স্টাইল চালিত করে। বাংলাদেশের সেরা পুরুষদের পোশাক ব্র্যান্ড, প্রিমিয়াম কোয়ালিটি এবং এক্সক্লুসিভ ডিজাইন নিয়ে।
             </p>
             <div className="text-sm text-gray-400 space-y-2">
-              <p>414/415 4th Floor, Shah Smriti Market</p>
-              <p>Road-10, Block-D, Mirpur-1, Dhaka</p>
+              <p>৪১৪/৪১৫ ৪র্থ তলা, শাহ স্মৃতি মার্কেট</p>
+              <p>রোড-১০, ব্লক-ডি, মিরপুর-১, ঢাকা</p>
               <p className="mt-2">info@classydrip.com</p>
-              <p>01980-035808</p>
+              <p>০১৯৮০-০৩৫৮০৮</p>
             </div>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 uppercase tracking-wider">Shop</h3>
             <ul className="space-y-4">
-              <li><Link href="/shop" className="text-gray-400 hover:text-white transition">All Products</Link></li>
-              <li><Link href="/category/shirt" className="text-gray-400 hover:text-white transition">Shirts</Link></li>
-              <li><Link href="/category/t-shirt" className="text-gray-400 hover:text-white transition">T-Shirts</Link></li>
-              <li><Link href="/category/panjabi" className="text-gray-400 hover:text-white transition">Panjabis</Link></li>
-              <li><Link href="/category/accessories" className="text-gray-400 hover:text-white transition">Accessories</Link></li>
-              <li><Link href="/category/shoes" className="text-gray-400 hover:text-white transition">Shoes</Link></li>
+              <li><Link href="/shop" className="text-gray-400 hover:text-white transition">সব প্রোডাক্ট</Link></li>
+              <li><Link href="/category/shirt" className="text-gray-400 hover:text-white transition">শার্ট</Link></li>
+              <li><Link href="/category/t-shirt" className="text-gray-400 hover:text-white transition">টি-শার্ট</Link></li>
+              <li><Link href="/category/panjabi" className="text-gray-400 hover:text-white transition">পাঞ্জাবি</Link></li>
+              <li><Link href="/category/accessories" className="text-gray-400 hover:text-white transition">এক্সেসরিজ</Link></li>
+              <li><Link href="/category/shoes" className="text-gray-400 hover:text-white transition">জুতা</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 uppercase tracking-wider">Company</h3>
             <ul className="space-y-4">
-              <li><Link href="/about-us" className="text-gray-400 hover:text-white transition">About Us</Link></li>
-              <li><Link href="/contact-us" className="text-gray-400 hover:text-white transition">Contact Us</Link></li>
-              <li><Link href="/terms" className="text-gray-400 hover:text-white transition">Terms of Service</Link></li>
-              <li><Link href="/privacy" className="text-gray-400 hover:text-white transition">Privacy Policy</Link></li>
+              <li><Link href="/about-us" className="text-gray-400 hover:text-white transition">আমাদের সম্পর্কে</Link></li>
+              <li><Link href="/contact-us" className="text-gray-400 hover:text-white transition">যোগাযোগ</Link></li>
+              <li><Link href="/terms" className="text-gray-400 hover:text-white transition">সেবার শর্তাবলী</Link></li>
+              <li><Link href="/privacy" className="text-gray-400 hover:text-white transition">প্রাইভেসি পলিসি</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 uppercase tracking-wider">Follow Us</h3>
-            <p className="text-gray-400 text-sm mb-6">Stay connected with us on social media.</p>
+            <p className="text-gray-400 text-sm mb-6">সোশ্যাল মিডিয়ায় আমাদের সাথে থাকুন।</p>
             <div className="flex space-x-4 mb-8">
               <a href="https://facebook.com/bdmenslifestyle" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-gray-700 flex items-center justify-center hover:bg-white hover:text-black hover:border-white transition" aria-label="Facebook">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -71,7 +77,7 @@ export default function Footer() {
                 type="submit"
                 className="bg-white text-black font-bold uppercase tracking-wider py-3 hover:bg-gray-200 transition"
               >
-                Subscribe
+                সাবস্ক্রাইব
               </button>
             </form>
           </div>
@@ -79,11 +85,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} Classy Drip. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Classy Drip. সর্বস্বত্ব সংরক্ষিত।</p>
           <div className="mt-4 md:mt-0 flex items-center gap-4">
-            <span className="text-xs">Cash on Delivery</span>
-            <span className="text-xs">Secure Checkout</span>
-            <span className="text-xs">14-Day Returns</span>
+            <span className="text-xs">ক্যাশ অন ডেলিভারি</span>
+            <span className="text-xs">সিকিউর চেকআউট</span>
+            <span className="text-xs">১৪ দিন রিটার্ন</span>
           </div>
         </div>
       </div>

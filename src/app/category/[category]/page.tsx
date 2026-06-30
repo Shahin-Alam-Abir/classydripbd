@@ -11,6 +11,7 @@ const categoryNames: Record<string, string> = {
   't-shirt': 'T-Shirt',
   panjabi: 'Panjabi',
   accessories: 'Accessories',
+  shoes: 'Shoes',
 };
 
 export default function CategoryPage() {
