@@ -378,9 +378,10 @@ export const products: Product[] = [
     id: '15',
     name: 'Premium Leather Belt | Classic Brown',
     price: 800,
+    salePrice: 650,
     images: [
       `${base}/2025/12/Group-238-1.png`,
-      `${base}/2025/12/Group-238-1.png`,
+      `https://placehold.co/600x800/8B4513/FFFFFF/png?text=Premium+Leather+Belt`,
     ],
     category: 'accessories',
     subcategory: 'belt',
@@ -396,15 +397,17 @@ export const products: Product[] = [
     colors: [{ name: 'Brown', hex: '#8B4513' }],
     sku: 'CMA-001',
     tags: ['accessories', 'belt', 'leather'],
-    isNew: true
+    isNew: true,
+    isSale: true
   },
   {
     id: '16',
     name: 'Premium Leather Wallet | Brown',
     price: 650,
+    salePrice: 500,
     images: [
       `${base}/2025/12/Group-238-1.png`,
-      `${base}/2025/12/Group-238-1.png`,
+      `https://placehold.co/600x800/8B4513/FFFFFF/png?text=Leather+Wallet`,
     ],
     category: 'accessories',
     subcategory: 'wallet',
@@ -420,6 +423,84 @@ export const products: Product[] = [
     colors: [{ name: 'Brown', hex: '#8B4513' }],
     sku: 'CMA-002',
     tags: ['accessories', 'wallet', 'leather'],
+    isNew: true,
+    isSale: true
+  },
+  {
+    id: '21',
+    name: 'Premium Formal Shoes | Black Oxford',
+    price: 2500,
+    salePrice: 1990,
+    images: [
+      `https://placehold.co/600x800/000000/FFFFFF/png?text=Oxford+Shoes+Front`,
+      `https://placehold.co/600x800/000000/FFFFFF/png?text=Oxford+Shoes+Side`,
+      `https://placehold.co/600x800/000000/FFFFFF/png?text=Oxford+Shoes+Back`,
+    ],
+    category: 'shoes',
+    subcategory: 'formal-shoes',
+    description: 'Premium formal oxford shoes in black. Genuine leather with comfortable insole for all-day wear. Perfect for office, weddings, and formal events.',
+    features: [
+      'Genuine leather upper',
+      'Comfortable cushioned insole',
+      'Durable rubber outsole',
+      'Classic oxford lacing',
+      'Breathable lining'
+    ],
+    sizes: ['39', '40', '41', '42', '43', '44'],
+    colors: [{ name: 'Black', hex: '#000000' }],
+    sku: 'CMSH-001',
+    tags: ['shoes', 'formal', 'oxford', 'leather'],
+    isNew: true,
+    isSale: true
+  },
+  {
+    id: '22',
+    name: 'Casual Sneakers | White Edition',
+    price: 1800,
+    salePrice: 1450,
+    images: [
+      `https://placehold.co/600x800/FFFFFF/000000/png?text=White+Sneakers+Front`,
+      `https://placehold.co/600x800/FFFFFF/000000/png?text=White+Sneakers+Side`,
+    ],
+    category: 'shoes',
+    subcategory: 'casual-shoes',
+    description: 'Trendy casual sneakers in white. Lightweight and comfortable for daily wear. Features a cushioned sole and breathable mesh upper.',
+    features: [
+      'Breathable mesh upper',
+      'Cushioned midsole',
+      'Non-slip rubber outsole',
+      'Lightweight design',
+      'Padded collar and tongue'
+    ],
+    sizes: ['39', '40', '41', '42', '43'],
+    colors: [{ name: 'White', hex: '#FFFFFF' }],
+    sku: 'CMSH-002',
+    tags: ['shoes', 'casual', 'sneakers', 'white'],
+    isNew: true,
+    isSale: true
+  },
+  {
+    id: '23',
+    name: 'Loafers for Men | Brown',
+    price: 2200,
+    images: [
+      `https://placehold.co/600x800/8B4513/FFFFFF/png?text=Brown+Loafers+Front`,
+      `https://placehold.co/600x800/8B4513/FFFFFF/png?text=Brown+Loafers+Top`,
+    ],
+    category: 'shoes',
+    subcategory: 'casual-shoes',
+    description: 'Stylish brown loafers for men. Slip-on design with premium leather finish. Comfortable for both casual and semi-formal occasions.',
+    features: [
+      'Premium leather',
+      'Slip-on design',
+      'Cushioned footbed',
+      'Durable sole',
+      'Versatile style'
+    ],
+    sizes: ['40', '41', '42', '43', '44'],
+    colors: [{ name: 'Brown', hex: '#8B4513' }],
+    sku: 'CMSH-003',
+    tags: ['shoes', 'loafers', 'casual', 'brown'],
     isNew: true
   },
   {
@@ -523,6 +604,7 @@ export const categories = [
   { id: 't-shirt', name: 'T-Shirt', nameBn: 'টি-শার্ট', count: 4, image: `${base}/2025/12/175915194068035332106_mf_719_2-1-1-1.webp` },
   { id: 'panjabi', name: 'Panjabi', nameBn: 'পাঞ্জাবি', count: 8, image: `${base}/2026/05/Navy-Q.jpg` },
   { id: 'accessories', name: 'Accessories', nameBn: 'এক্সেসরিজ', count: 2, image: `${base}/2025/12/Group-238-1.png` },
+  { id: 'shoes', name: 'Shoes', nameBn: 'জুতা', count: 3, image: `https://placehold.co/600x800/000000/FFFFFF/png?text=Shoes` },
 ];
 
 export const subcategories: Record<string, { id: string; name: string }[]> = {
@@ -550,5 +632,9 @@ export const subcategories: Record<string, { id: string; name: string }[]> = {
   'accessories': [
     { id: 'belt', name: 'Belt' },
     { id: 'wallet', name: 'Wallet' },
+  ],
+  'shoes': [
+    { id: 'formal-shoes', name: 'Formal Shoes' },
+    { id: 'casual-shoes', name: 'Casual Shoes' },
   ],
 };

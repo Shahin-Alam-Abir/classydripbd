@@ -8,8 +8,7 @@ export default function Footer() {
 
           <div className="col-span-1 md:col-span-1">
             <div className="flex flex-col items-start mb-6">
-              <span className="font-serif text-3xl font-bold tracking-[0.2em]">CLASSY</span>
-              <span className="text-sm tracking-[0.3em] font-medium text-gray-400">DRIP</span>
+              <img src="/images/logo.jpg" alt="Classy Drip" className="h-14 w-auto mb-2" />
             </div>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">
               Defined by class, driven by style. The best men's clothing store in Bangladesh providing premium quality and exclusive designs.
@@ -30,6 +29,7 @@ export default function Footer() {
               <li><Link href="/category/t-shirt" className="text-gray-400 hover:text-white transition">T-Shirts</Link></li>
               <li><Link href="/category/panjabi" className="text-gray-400 hover:text-white transition">Panjabis</Link></li>
               <li><Link href="/category/accessories" className="text-gray-400 hover:text-white transition">Accessories</Link></li>
+              <li><Link href="/category/shoes" className="text-gray-400 hover:text-white transition">Shoes</Link></li>
             </ul>
           </div>
 

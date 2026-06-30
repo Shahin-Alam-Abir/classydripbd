@@ -44,6 +44,10 @@ export default function Navbar() {
       label: 'Accessories', dropdown: subcategories['accessories'],
       href: '/category/accessories'
     },
+    {
+      label: 'Shoes', dropdown: subcategories['shoes'],
+      href: '/category/shoes'
+    },
   ];
 
   return (
@@ -65,9 +69,8 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center justify-center flex-1 md:flex-none">
-              <Link href="/" className="flex flex-col items-center">
-                <span className="font-serif text-3xl font-bold tracking-[0.2em] text-black">CLASSY</span>
-                <span className="text-sm tracking-[0.3em] font-medium text-black">DRIP</span>
+              <Link href="/" className="flex items-center">
+                <img src="/images/logo.jpg" alt="Classy Drip" className="h-12 w-auto" />
               </Link>
             </div>
 
@@ -129,7 +132,7 @@ export default function Navbar() {
           <div className="absolute inset-0 bg-black/50" onClick={() => setMobileOpen(false)} />
           <div className="absolute top-0 left-0 h-full w-80 bg-white shadow-2xl animate-slide-down overflow-y-auto">
             <div className="flex justify-between items-center p-6 border-b border-gray-100">
-              <span className="font-serif text-xl font-bold tracking-[0.2em]">CLASSY DRIP</span>
+              <img src="/images/logo.jpg" alt="Classy Drip" className="h-10 w-auto" />
               <button onClick={() => setMobileOpen(false)} className="text-black">
                 <X className="h-6 w-6" />
               </button>
