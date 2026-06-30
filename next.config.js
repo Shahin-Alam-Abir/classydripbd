@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    turbopack: {
+        root: '/home/abir/classydripbd',
+    },
     images: {
         remotePatterns: [
             {
